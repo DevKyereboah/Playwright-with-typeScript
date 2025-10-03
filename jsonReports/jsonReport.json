@@ -41,7 +41,7 @@
       {
         "outputDir": "C:/Users/SarahOwusu/Desktop/PlayWright with TypeScript/test-results",
         "repeatEach": 1,
-        "retries": 2,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -57,7 +57,7 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.55.1",
     "workers": 4,
     "webServer": null
@@ -70,7 +70,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "handling dropdown",
+          "title": "handling multi select dropdown",
           "ok": true,
           "tags": [],
           "tests": [
@@ -85,23 +85,23 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10132,
+                  "duration": 13969,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-10-03T16:48:13.109Z",
+                  "startTime": "2025-10-03T23:36:34.520Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-handlingDropdown-handling-dropdown\\test-finished-1.png"
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-handlingDropdown-handling-multi-select-dropdown\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-handlingDropdown-handling-dropdown\\video.webm"
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-handlingDropdown-handling-multi-select-dropdown\\video.webm"
                     }
                   ]
                 }
@@ -109,9 +109,9 @@
               "status": "expected"
             }
           ],
-          "id": "488af04095e510a11277-6118fd3ea9bbad476698",
+          "id": "488af04095e510a11277-768f4f8bc360c0b5f369",
           "file": "tests/handlingDropdown.test.ts",
-          "line": 3,
+          "line": 38,
           "column": 5
         }
       ]
@@ -119,8 +119,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-03T16:48:12.098Z",
-    "duration": 12934.856,
+    "startTime": "2025-10-03T23:36:32.328Z",
+    "duration": 17395.698000000004,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

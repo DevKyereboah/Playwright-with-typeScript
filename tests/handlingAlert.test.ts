@@ -6,7 +6,8 @@ test("handling alert", async ({page}) =>{
         const text = alert.message();
         console.log(text);
         await alert.dismiss();
-        // await alert.accept();
+        // await alert.accept("type something ");
+        // await alert.default();
     })
     await page.locator("button[class='btn btn-dark my-30 mx-10 hover:bg-lambda-900 hover:border-lambda-900']").click
         await expect(page.locator("#confirm-demo")).toContainText("Cancel");

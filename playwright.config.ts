@@ -6,6 +6,9 @@ export default defineConfig({
     headless: false,
     screenshot: "on",
     video: "on",
+    launchOptions:{
+      slowMo: 1000
+    }
   },
   retries: 2,
   reporter: [
