@@ -24,8 +24,7 @@ test('Login test', async ({ page }) => {
   await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/logout');
   await page.locator ("//a[@role='button']//span[@class='title'][normalize-space()='My account']").hover();
   await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
-  await setTimeout(3000); // wait for 3 seconds
   await page.locator('#input-email').fill(username);
-  await page.locator("label[for='input-password']")
+  await page.locator("label[for='input-password']").fill(password);
   await page.locator("input[value='Login']").click();
 });
