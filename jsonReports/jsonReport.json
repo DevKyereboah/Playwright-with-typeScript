@@ -64,14 +64,14 @@
   },
   "suites": [
     {
-      "title": "tests\\handlingDropdown.test.ts",
-      "file": "tests/handlingDropdown.test.ts",
+      "title": "tests\\Practice.test.ts",
+      "file": "tests/Practice.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "handling multi select dropdown",
-          "ok": true,
+          "title": "clearing input field",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -82,36 +82,57 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 34,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 13969,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 31500,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\tests\\Practice.test.ts",
+                        "column": 29,
+                        "line": 29
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[name=\\'Edit\\']').nth(1)\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[90m//Test case 3: InvalidElementStateException\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mconst\u001b[39m saveButtonStatus \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"[name='Edit']\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m      \u001b[36mawait\u001b[39m saveButtonStatus\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     expect(saveButtonStatus)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Edit'\u001b[39m)\n \u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m saveButtonStatus\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 32 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\tests\\Practice.test.ts:29:29\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-10-03T23:36:34.520Z",
+                  "startTime": "2025-10-05T17:42:18.269Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-handlingDropdown-handling-multi-select-dropdown\\test-finished-1.png"
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-Practice-clearing-input-field\\test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-handlingDropdown-handling-multi-select-dropdown\\video.webm"
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-Practice-clearing-input-field\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-Practice-clearing-input-field\\error-context.md"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "488af04095e510a11277-768f4f8bc360c0b5f369",
-          "file": "tests/handlingDropdown.test.ts",
-          "line": 38,
+          "id": "b87ad5dd1e2faa49bb58-a840d4bab180494c097e",
+          "file": "tests/Practice.test.ts",
+          "line": 24,
           "column": 5
         }
       ]
@@ -119,11 +140,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-03T23:36:32.328Z",
-    "duration": 17395.698000000004,
-    "expected": 1,
+    "startTime": "2025-10-05T17:42:16.342Z",
+    "duration": 34361.250999987125,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
