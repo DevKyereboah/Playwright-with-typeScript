@@ -1,11 +1,15 @@
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testMatch: ["tests/**/*.test.ts"],
+  testMatch: ["tests/**/*.test.ts",
+     "pomTest/**/*test.ts", "tests-examples/**/.spec.ts"],
   use: {
     headless: false,
     screenshot: "on",
     video: "on",
+    launchOptions:{
+      slowMo: 1000
+    }
   },
   retries: 2,
   reporter: [
