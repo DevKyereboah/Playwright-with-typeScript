@@ -41,7 +41,7 @@
       {
         "outputDir": "C:/Users/SarahOwusu/Desktop/PlayWright with TypeScript/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -50,27 +50,29 @@
         "testDir": "C:/Users/SarahOwusu/Desktop/PlayWright with TypeScript",
         "testIgnore": [],
         "testMatch": [
-          "tests/**/*.test.ts"
+          "tests/**/*.test.ts",
+          "pomTest/**/*test.ts",
+          "tests-examples/**/.spec.ts"
         ],
         "timeout": 30000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.55.1",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\upload_Download.test.ts",
-      "file": "tests/upload_Download.test.ts",
+      "title": "pomTest\\addToCart.test.ts",
+      "file": "pomTest/addToCart.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "file upload test",
+          "title": "Register test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -82,30 +84,26 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6674,
+                  "duration": 15156,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-10-12T02:25:08.993Z",
+                  "startTime": "2025-10-15T19:45:39.464Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-upload_Download-file-upload-test\\test-finished-1.png"
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-Register-test\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\tests-upload_Download-file-upload-test\\video.webm"
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-Register-test\\video.webm"
                     }
                   ]
                 }
@@ -113,9 +111,378 @@
               "status": "expected"
             }
           ],
-          "id": "8fe844163d6916c3b552-5b74137bbd260b1d2dfc",
-          "file": "tests/upload_Download.test.ts",
-          "line": 17,
+          "id": "de488a82fdc52b0fe88f-5d0391165c5f8ae2c353",
+          "file": "pomTest/addToCart.test.ts",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "login test_0",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11850,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-15T19:45:55.211Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-login-test-0\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-login-test-0\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "de488a82fdc52b0fe88f-de347c920ceeabd95d1d",
+          "file": "pomTest/addToCart.test.ts",
+          "line": 26,
+          "column": 5
+        },
+        {
+          "title": "special hot page test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30911,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\SpecialHotPage.ts",
+                        "column": 21,
+                        "line": 24
+                      },
+                      "message": "Error: locator.waitFor: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//a[.=\\'View Cart\\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\SpecialHotPage.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m         \u001b[36mconst\u001b[39m frame1 \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mframeLocator(\u001b[32m\"#jam-coms-9187fa94-17b9-41e0-85be-8c17d1f2975e\"\u001b[39m)\n \u001b[90m 23 |\u001b[39m         \u001b[36mconst\u001b[39m toast \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//a[.='View Cart']\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m         \u001b[36mawait\u001b[39m toast\u001b[33m.\u001b[39mwaitFor({state\u001b[33m:\u001b[39m\u001b[32m\"visible\"\u001b[39m})\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m         \u001b[36mreturn\u001b[39m toast\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     }\n \u001b[90m 27 |\u001b[39m\u001b[0m\n\u001b[2m    at SpecialHotPage.FrameIsToastVisible (C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\SpecialHotPage.ts:24:21)\u001b[22m\n\u001b[2m    at C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pomTest\\addToCart.test.ts:41:26\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "total frame[object Object]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-15T19:46:07.079Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-special-hot-page-test\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-special-hot-page-test\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-special-hot-page-test\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30933,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\SpecialHotPage.ts",
+                        "column": 21,
+                        "line": 24
+                      },
+                      "message": "Error: locator.waitFor: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//a[.=\\'View Cart\\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\SpecialHotPage.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m         \u001b[36mconst\u001b[39m frame1 \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mframeLocator(\u001b[32m\"#jam-coms-9187fa94-17b9-41e0-85be-8c17d1f2975e\"\u001b[39m)\n \u001b[90m 23 |\u001b[39m         \u001b[36mconst\u001b[39m toast \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//a[.='View Cart']\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m         \u001b[36mawait\u001b[39m toast\u001b[33m.\u001b[39mwaitFor({state\u001b[33m:\u001b[39m\u001b[32m\"visible\"\u001b[39m})\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m         \u001b[36mreturn\u001b[39m toast\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     }\n \u001b[90m 27 |\u001b[39m\u001b[0m\n\u001b[2m    at SpecialHotPage.FrameIsToastVisible (C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\SpecialHotPage.ts:24:21)\u001b[22m\n\u001b[2m    at C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pomTest\\addToCart.test.ts:41:26\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "total frame[object Object]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-10-15T19:46:40.030Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-special-hot-page-test-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-special-hot-page-test-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-special-hot-page-test-retry1\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30899,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\SpecialHotPage.ts",
+                        "column": 21,
+                        "line": 24
+                      },
+                      "message": "Error: locator.waitFor: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//a[.=\\'View Cart\\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\SpecialHotPage.ts:24\n\n\u001b[0m \u001b[90m 22 |\u001b[39m         \u001b[36mconst\u001b[39m frame1 \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mframeLocator(\u001b[32m\"#jam-coms-9187fa94-17b9-41e0-85be-8c17d1f2975e\"\u001b[39m)\n \u001b[90m 23 |\u001b[39m         \u001b[36mconst\u001b[39m toast \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//a[.='View Cart']\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m         \u001b[36mawait\u001b[39m toast\u001b[33m.\u001b[39mwaitFor({state\u001b[33m:\u001b[39m\u001b[32m\"visible\"\u001b[39m})\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m         \u001b[36mreturn\u001b[39m toast\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     }\n \u001b[90m 27 |\u001b[39m\u001b[0m\n\u001b[2m    at SpecialHotPage.FrameIsToastVisible (C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\SpecialHotPage.ts:24:21)\u001b[22m\n\u001b[2m    at C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pomTest\\addToCart.test.ts:41:26\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "total frame[object Object]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2025-10-15T19:47:13.107Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-special-hot-page-test-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-special-hot-page-test-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-special-hot-page-test-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "de488a82fdc52b0fe88f-85b4a22a740c9dbeff72",
+          "file": "pomTest/addToCart.test.ts",
+          "line": 36,
+          "column": 5
+        },
+        {
+          "title": "add to cart",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31128,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\homePage.ts",
+                        "column": 10,
+                        "line": 8
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ul[class=\\'navbar-nav horizontal\\'] a[class=\\'icon-left both nav-link active\\']')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\homePage.ts:8\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m clickSpecialHotMenu(){\n \u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"ul[class='navbar-nav horizontal'] a[class='icon-left both nav-link active']\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m         \u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m }\u001b[0m\n\u001b[2m    at HomePage.clickSpecialHotMenu (C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\homePage.ts:8:10)\u001b[22m\n\u001b[2m    at C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pomTest\\addToCart.test.ts:50:20\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-15T19:47:46.577Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-add-to-cart\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-add-to-cart\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-add-to-cart\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31591,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\homePage.ts",
+                        "column": 10,
+                        "line": 8
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ul[class=\\'navbar-nav horizontal\\'] a[class=\\'icon-left both nav-link active\\']')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\homePage.ts:8\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m clickSpecialHotMenu(){\n \u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"ul[class='navbar-nav horizontal'] a[class='icon-left both nav-link active']\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m         \u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m }\u001b[0m\n\u001b[2m    at HomePage.clickSpecialHotMenu (C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\homePage.ts:8:10)\u001b[22m\n\u001b[2m    at C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pomTest\\addToCart.test.ts:50:20\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-10-15T19:48:20.793Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-add-to-cart-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-add-to-cart-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-add-to-cart-retry1\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31106,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\homePage.ts",
+                        "column": 10,
+                        "line": 8
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ul[class=\\'navbar-nav horizontal\\'] a[class=\\'icon-left both nav-link active\\']')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\homePage.ts:8\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m clickSpecialHotMenu(){\n \u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"ul[class='navbar-nav horizontal'] a[class='icon-left both nav-link active']\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m         \u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m }\u001b[0m\n\u001b[2m    at HomePage.clickSpecialHotMenu (C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pages\\homePage.ts:8:10)\u001b[22m\n\u001b[2m    at C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\pomTest\\addToCart.test.ts:50:20\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2025-10-15T19:48:56.170Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-add-to-cart-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-add-to-cart-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\SarahOwusu\\Desktop\\PlayWright with TypeScript\\test-results\\pomTest-addToCart-add-to-cart-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "de488a82fdc52b0fe88f-d1b51d5386a3ba25ed26",
+          "file": "pomTest/addToCart.test.ts",
+          "line": 44,
           "column": 5
         }
       ]
@@ -123,11 +490,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-12T02:25:06.844Z",
-    "duration": 10320.255000000005,
-    "expected": 1,
+    "startTime": "2025-10-15T19:45:38.339Z",
+    "duration": 230378.668,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

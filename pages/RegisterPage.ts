@@ -1,5 +1,4 @@
 import { Page } from "@playwright/test";
-import {test,expect} from "@playwright/test";
 export default class RegisterPage{
   constructor(public page: Page){
   }
@@ -21,8 +20,8 @@ export default class RegisterPage{
   async confirmPassword(password: string){
     await this.page.locator("#input-confirm").type(password)
   }
-  async isSubscribeChecked(){
-    return await this.page.locator("label[for='input-newsletter-yes']").isChecked()
+    isSubscribeChecked(){
+    return this.page.locator("label[for='input-newsletter-no']")
   }
   async clickTermCondition(){
     return await this.page.locator("label[for='input-agree']").check()

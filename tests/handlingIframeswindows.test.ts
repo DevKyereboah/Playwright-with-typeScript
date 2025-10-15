@@ -2,6 +2,7 @@ import {test, expect} from "@playwright/test";
 
 test("hadling iframes and ", async ({page})=>{
     await page.goto("https://letcode.in/frame");
+    //finding the number of frames on the page
     const allframes = page.frames();
     console.log("total frames: "+ allframes.length);
 
