@@ -20,15 +20,15 @@ test('sum', async ({page})=>{
     const secondInput = page.locator("#sum2")
     
     const getTotalInputBtn = page.locator("//button[normalize-space()='Get Sum']")
-    let num1 = 121;
-    let num2 = 234;
+    const num1 = 121;
+    const num2 = 234;
 
     await firstInput.fill(" " + num1)
     await secondInput.fill(" " + num2)
     await getTotalInputBtn.click();
 
     const result = page.locator("#addmessage")
-    let expectedResult = num1 + num2;
+    const expectedResult = num1 + num2;
     console.log(await result.textContent());
     expect(result).toHaveText("" + expectedResult)
 })

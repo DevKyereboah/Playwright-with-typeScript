@@ -1,9 +1,7 @@
 // tests/login.spec.ts
-import { test, expect, Page } from '@playwright/test';
+import { test} from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
-import { setTimeout } from 'timers/promises';
-
 const filePath = path.join(__dirname, 'testData', 'Login-user.json');
 
 let user: { username?: string; Username?: string; password?: string; Password?: string };
@@ -13,7 +11,7 @@ try {
     throw new Error('Login-user.json is empty');
   }
   user = JSON.parse(rawData);
-} catch (err: any) {
+} catch (err: unknown) {
   throw new Error(`Failed to read/parse JSON at ${filePath}: ${err.message}`)
 }
 

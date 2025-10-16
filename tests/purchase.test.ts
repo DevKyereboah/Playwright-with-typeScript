@@ -1,6 +1,5 @@
-import { test, expect, Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import {login} from './loginHelper.ts';
-import { time } from 'console';
 
 test("dashboard page", async ({page}) => {
     await login(page);
@@ -17,9 +16,9 @@ test("dashboard page", async ({page}) => {
     console.log(await page.locator('input').allInnerTexts());
     await continueButton.click();
 
-    function timeout(ms: number) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+//     function timeout(ms: number) {
+//   return new Promise(resolve => setTimeout(resolve, ms));
+// }
 })
 
 

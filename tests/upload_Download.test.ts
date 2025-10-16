@@ -1,4 +1,4 @@
-import {test, expect} from '@playwright/test'
+import {test} from '@playwright/test'
 test.only("file download test", async({page})=>{
     await page.goto("https://www.lambdatest.com/selenium-playground/generate-file-to-download-demo")
     await page.waitForSelector("#textbox", {state: "visible"})

@@ -1,12 +1,11 @@
 import {test, expect} from "@playwright/test"
-import { time } from "console";
 test("practice test", async ({page})=>{
     await page.goto("https://practicetestautomation.com/practice-test-exceptions/")
 
     //Test case 1: NoSuchElementException
     await page.locator("#add_btn").click();
     const rowTwoDispayed = page.locator(".input-field").first()
-    await page.waitForTimeout(3000);
+    // await page.waitForTimeout(3000);
     expect(rowTwoDispayed).toBeVisible();
 })
 test("second row", async ({page})=>{

@@ -1,4 +1,4 @@
-import {test, expect} from "@playwright/test"
+import {test} from "@playwright/test"
 test("handling windows and multiple tabs", async ({page})=>{
     await page.goto("https://www.lambdatest.com/selenium-playground/window-popup-modal-demo");
     const [newWindow] = await Promise.all([

@@ -1,8 +1,6 @@
 import { Page } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
-import { setTimeout } from 'timers/promises';
-
 export async function login(page: Page) {
   const filePath = path.join(__dirname, 'testData', 'Login-user.json');
 
@@ -13,7 +11,7 @@ export async function login(page: Page) {
       throw new Error('Login-user.json is empty');
     }
     user = JSON.parse(rawData);
-  } catch (err: any) {
+  } catch (err: unknown) {
     throw new Error(`Failed to read/parse JSON at ${filePath}: ${err.message}`)
   }
 
